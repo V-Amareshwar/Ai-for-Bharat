@@ -1,0 +1,45 @@
+# ============================================
+# Backend-Specific .gitignore (Python/FastAPI)
+# ============================================
+
+# Environment Variables - CONTAINS AWS CREDENTIALS!
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Generated Audio Files (From Polly)
+static/*.mp3
+static/*.webm
+static/
+
+# AWS SAM Build Artifacts
+.aws-sam/
+build/
+
+# Logs
+*.log
