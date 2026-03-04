@@ -1,0 +1,84 @@
+{
+  "scheme_id": "PMJAY",
+  "scheme_name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana",
+  "category": "Health Insurance",
+  "target_group": "Poor and vulnerable families (SECC based)",
+  "objective": "Provide cashless hospitalization coverage up to ₹5,00,000 per family per year.",
+  
+  "benefits": {
+    "annual_coverage_amount": 500000,
+    "coverage_type": "Cashless hospitalization",
+    "pre_hospitalization_days": 3,
+    "post_hospitalization_days": 15,
+    "pre_existing_disease_covered": true,
+    "family_size_limit": "No limit",
+    "nationwide_portability": true
+  },
+
+  "eligibility_rules": {
+    "rural_categories": [
+      "Only one room with kucha walls and roof",
+      "No adult member between 16-59",
+      "No adult male member between 16-59",
+      "Disabled member with no able-bodied adult",
+      "SC/ST household",
+      "Landless manual labour household",
+      "Household without shelter",
+      "Destitute / living on alms",
+      "Manual scavenger family",
+      "Primitive tribal group",
+      "Legally released bonded labour"
+    ],
+    "urban_occupations": [
+      "Ragpicker",
+      "Domestic worker",
+      "Street vendor",
+      "Construction worker",
+      "Sanitation worker",
+      "Transport worker",
+      "Shop worker",
+      "Electrician / Mechanic",
+      "Washer-man",
+      "Security guard",
+      "Tailor / Artisan"
+    ]
+  },
+
+  "exclusion_rules": {
+    "owns_motor_vehicle": true,
+    "owns_mechanized_farming_equipment": true,
+    "kisan_card_limit_above_50000": true,
+    "government_employee": true,
+    "monthly_income_above_10000": true,
+    "owns_5_acres_or_more_land": true,
+    "owns_refrigerator_and_landline": true,
+    "solid_house_owner": true
+  },
+
+  "required_documents": [
+    "Aadhaar Card",
+    "Ration Card",
+    "Identity Proof",
+    "Income Certificate",
+    "Caste Certificate",
+    "Mobile Number"
+  ],
+
+  "required_user_fields": [
+    "full_name",
+    "aadhaar_number",
+    "mobile_number",
+    "area_type (rural/urban)",
+    "occupation",
+    "caste_category",
+    "monthly_income",
+    "land_ownership",
+    "vehicle_ownership",
+    "ration_card_number"
+  ],
+
+  "application_mode": [
+    "Hospital via Arogya Mitra",
+    "Common Service Centre (CSC)"
+  ]
+}

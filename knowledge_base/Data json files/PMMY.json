@@ -1,0 +1,83 @@
+{
+  "scheme_id": "PMMY",
+  "scheme_name": "Pradhan Mantri Mudra Yojana",
+  "category": "Micro Business Loan",
+  "target_group": "Non-corporate micro enterprises in manufacturing, trading, service and allied agriculture sectors",
+  "objective": "Provide collateral-free micro credit up to ₹20 lakh for income generating non-farm activities.",
+  
+  "loan_categories": {
+    "Shishu": {
+      "min": 0,
+      "max": 50000
+    },
+    "Kishore": {
+      "min": 50001,
+      "max": 500000
+    },
+    "Tarun": {
+      "min": 500001,
+      "max": 1000000
+    },
+    "Tarun_Plus": {
+      "min": 1000001,
+      "max": 2000000,
+      "condition": "Must have successfully repaid previous Tarun loan"
+    }
+  },
+
+  "eligibility_rules": {
+    "citizenship_required": true,
+    "must_be_non_corporate_micro_unit": true,
+    "not_bank_defaulter": true,
+    "activity_allowed": [
+      "Manufacturing",
+      "Trading",
+      "Service",
+      "Agri-allied non-farm activities",
+      "Transport business",
+      "Micro enterprise equipment purchase"
+    ]
+  },
+
+  "exclusion_rules": {
+    "bank_defaulter": true,
+    "corporate_large_enterprise": true
+  },
+
+  "required_documents": {
+    "shishu": [
+      "ID Proof",
+      "Address Proof",
+      "Photograph",
+      "Business Proof",
+      "Machinery Quotation"
+    ],
+    "above_2_lakh": [
+      "Bank Statement (6 months)",
+      "IT Returns",
+      "Balance Sheets",
+      "Project Report",
+      "Asset & Liability Statement"
+    ]
+  },
+
+  "required_user_fields": [
+    "full_name",
+    "mobile_number",
+    "aadhaar_number",
+    "business_type",
+    "business_activity",
+    "loan_amount_required",
+    "existing_bank_account",
+    "credit_history_status",
+    "annual_turnover",
+    "preferred_lender"
+  ],
+
+  "application_modes": [
+    "Udyamimitra Portal",
+    "Bank Branch",
+    "NBFC",
+    "MFI"
+  ]
+}

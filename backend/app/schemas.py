@@ -10,6 +10,7 @@ class VoiceRequest(BaseModel):
     user_id: str
     s3_key: Optional[str] = None
     language: Optional[str] = "hi-IN"
+    text: Optional[str] = None
 
 # 2. Dictates what the AI extracts from the user's spoken words
 class ExtractedEntities(BaseModel):

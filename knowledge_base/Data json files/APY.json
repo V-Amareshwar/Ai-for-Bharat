@@ -1,0 +1,56 @@
+{
+  "scheme_id": "APY",
+  "scheme_name": "Atal Pension Yojana",
+  "category": "Pension / Old Age Income Security",
+  "target_group": "Workers in unorganized sector",
+  "objective": "To provide guaranteed minimum pension after age 60 and encourage retirement savings.",
+  "benefits": {
+    "pension_options": [1000, 2000, 3000, 4000, 5000],
+    "pension_start_age": 60,
+    "spouse_pension": true,
+    "nominee_corpus_return": true,
+    "tax_benefit_section": "80CCD(1)"
+  },
+  "eligibility_rules": {
+    "citizenship_required": true,
+    "min_age": 18,
+    "max_age": 40,
+    "must_have_savings_account": true,
+    "income_tax_payer_not_allowed": true,
+    "must_have_active_mobile": true
+  },
+  "exclusion_rules": {
+    "income_tax_payer": true,
+    "already_has_apy_account": true
+  },
+  "contribution_mode": {
+    "auto_debit_required": true,
+    "frequency_options": ["monthly", "quarterly", "half-yearly"],
+    "contribution_period": "From joining age till 60"
+  },
+  "required_documents": [
+    "Aadhaar Card",
+    "Savings Bank / Post Office Account",
+    "Active Mobile Number"
+  ],
+  "required_user_fields": [
+    "full_name",
+    "date_of_birth",
+    "age",
+    "mobile_number",
+    "aadhaar_number",
+    "bank_account_number",
+    "ifsc_code",
+    "nominee_name",
+    "nominee_relationship",
+    "selected_pension_amount",
+    "contribution_frequency"
+  ],
+  "application_modes": [
+    "Internet Banking",
+    "eNPS Portal",
+    "Bank Branch",
+    "Post Office"
+  ],
+  "helpline": "1800-110-069"
+}

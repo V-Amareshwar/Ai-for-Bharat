@@ -1,0 +1,63 @@
+{
+  "scheme_id": "KCC",
+  "scheme_name": "Kisan Credit Card",
+  "category": "Agricultural Credit",
+  "target_group": "Farmers and allied agricultural workers",
+  "objective": "Provide adequate and timely credit for cultivation, post-harvest, allied and investment activities.",
+  
+  "benefits": {
+    "interest_subvention_percent": 2,
+    "prompt_repayment_incentive_percent": 3,
+    "effective_interest_rate_percent": 4,
+    "credit_types": [
+      "Short-term crop loan",
+      "Post-harvest loan",
+      "Consumption support",
+      "Working capital for farm assets",
+      "Investment loan for agriculture and allied activities"
+    ]
+  },
+
+  "eligibility_rules": {
+    "eligible_categories": [
+      "Owner cultivator",
+      "Tenant farmer",
+      "Oral lessee",
+      "Sharecropper",
+      "Self Help Group (SHG)",
+      "Joint Liability Group (JLG)"
+    ]
+  },
+
+  "loan_structure": {
+    "credit_limit_validity_years": 5,
+    "short_term_component": true,
+    "term_loan_component": true,
+    "max_permissible_limit_defined_by_bank": true
+  },
+
+  "required_documents": [
+    "Application Form",
+    "Aadhaar / Voter ID / Passport / Driving License",
+    "Address Proof",
+    "Landholding Proof",
+    "Cropping Pattern Details",
+    "Passport Size Photos"
+  ],
+
+  "required_user_fields": [
+    "full_name",
+    "mobile_number",
+    "aadhaar_number",
+    "farmer_category",
+    "landholding_details",
+    "cropping_pattern",
+    "loan_amount_required",
+    "bank_name"
+  ],
+
+  "application_modes": [
+    "Bank Branch",
+    "Bank Website"
+  ]
+}

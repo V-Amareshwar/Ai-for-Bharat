@@ -9,7 +9,6 @@ export default function Home() {
   const [appState, setAppState] = useState<AppState>("idle");
   const [statusText, setStatusText] = useState("अपनी भाषा में बोलें (Speak in your language)");
   
-  // NEW: State to hold the live form data from the backend
   const [extractedData, setExtractedData] = useState<Record<string, string | null> | null>(null);
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -32,16 +31,17 @@ export default function Home() {
         setStatusText("दीदी आपकी बात समझ रही हैं... (Didi is processing...)");
 
         try {
-          const requestBody = {
-            s3_key: "demo-recording.webm",
-            user_id: "9876543210", 
-            language: "hi-IN"      
-          };
+          // ==========================================
+          // Sending the actual Audio File via FormData
+          // ==========================================
+          const formData = new FormData();
+          formData.append("audio_file", audioBlob, "recording.webm");
+          formData.append("user_id", "9876543210");
+          formData.append("language", "hi-IN");
 
           const response = await fetch("http://localhost:8000/api/v1/process-voice", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(requestBody),
+            body: formData, // The browser handles the multipart/form-data headers automatically
           });
 
           if (!response.ok) throw new Error(`API error: ${response.status}`);
@@ -51,7 +51,6 @@ export default function Home() {
           
           setStatusText(data.ai_response || "जवाब तैयार है! (Response ready!)");
           
-          // NEW: Save the extracted data to our React state to update the UI
           if (data.extracted_data) {
             setExtractedData(data.extracted_data);
           }
@@ -112,7 +111,6 @@ export default function Home() {
   return (
     <main className="flex flex-col h-screen w-full items-center py-6 px-4 sm:py-8 sm:px-8 overflow-y-auto bg-[#f8fafc]">
       
-      {/* Top Section */}
       <div className="w-full text-center flex-shrink-0 mb-4">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-green-700 mb-2 tracking-wide">जन-सहायक</h1>
         <p className="text-base text-gray-500 font-semibold italic">
@@ -120,7 +118,6 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Middle Section: Didi Avatar */}
       <div className="flex-shrink-0 flex items-center justify-center my-4">
         <div className={`relative rounded-full bg-white p-2 transition-all duration-500 shadow-xl ${getAvatarRingStyle()}`}>
           <div className="w-24 h-24 sm:w-32 sm:h-32 bg-orange-50 rounded-full flex items-center justify-center overflow-hidden border-2 border-orange-300 relative">
@@ -129,7 +126,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Mic Button & Status Text */}
       <div className="flex flex-col items-center flex-shrink-0 w-full mb-6">
         <div className={`text-lg sm:text-xl font-semibold mb-4 text-center px-4 transition-colors duration-300 animate-pulse ${
           appState === 'error' ? 'text-red-600' : 'text-gray-700'
@@ -160,7 +156,6 @@ export default function Home() {
         </button>
       </div>
 
-      {/* NEW: LIVE FORM DATA COMPONENT */}
       {extractedData && (
         <div className="w-full max-w-md bg-white rounded-2xl shadow-lg border border-gray-100 p-5 mt-2 transition-all duration-500 animate-fade-in-up">
           <h3 className="text-lg font-bold text-gray-800 border-b pb-3 mb-4 flex items-center">
@@ -173,7 +168,6 @@ export default function Home() {
                 <span className="font-semibold text-gray-600 text-sm">{key}</span>
                 
                 {value ? (
-                  // GREEN TICK: If the backend found the data
                   <div className="flex items-center text-green-700 font-bold bg-green-100 px-3 py-1.5 rounded-full text-xs sm:text-sm shadow-sm">
                     <span>{String(value)}</span>
                     <svg className="w-4 h-4 ml-1.5" fill="currentColor" viewBox="0 0 20 20">
@@ -181,7 +175,6 @@ export default function Home() {
                     </svg>
                   </div>
                 ) : (
-                  // ORANGE CLOCK: If the data is still missing (null)
                   <div className="flex items-center text-amber-600 font-medium bg-amber-50 px-3 py-1.5 rounded-full text-xs sm:text-sm border border-amber-100 animate-pulse">
                     <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>

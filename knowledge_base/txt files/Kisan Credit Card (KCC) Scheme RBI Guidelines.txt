@@ -1,0 +1,379 @@
+ANNEX
+REVISED SCHEME FOR ISSUE OF KISAN CREDIT CARD (KCC)
+1. Introduction
+The Kisan Credit Card has emerged as an innovative credit delivery mechanism to meet the
+production credit requirements of the farmers in a timely and hassle-free manner. The scheme is
+under implementation in the entire country by the vast institutional credit framework involving
+Commercial Banks, RRBs and Cooperatives and has received wide acceptability amongst bankers
+and farmers. However, during the last 13 years of implementation, many impediments were
+encountered by policy makers, implementing banks and the farmers in the implementation of the
+scheme. Recommendations of various Committees appointed by GOI and studies conducted by
+NABARD also corroborate this fact. It was, therefore, felt necessary to revisit the existing KCC
+Scheme to make it truly simple and hassle free for both the farmers and bankers. Accordingly, the
+GOI, Ministry of Finance constituted a Working Group to review the KCC Scheme. Based on the
+recommendations of the Working Group which were accepted by the GoI, the following guidelines are
+issued:
+2. Applicability of the Scheme
+The Revised KCC Scheme detailed in the ensuing paragraphs is to be implemented by Commercial
+Banks, RRBs, and Cooperatives. The scheme provides broad guidelines to the banks for
+operationalising the KCC scheme. Implementing banks will have the discretion to adopt the same to
+suit institution/location specific requirements.
+3. Objectives/Purpose
+Kisan Credit Card Scheme aims at providing adequate and timely credit support from the banking
+system under a single window to the farmers for their cultivation & other needs as indicated below:
+a. To meet the short term credit requirements for cultivation of crops
+b. Post harvest expenses
+c. Produce Marketing loan
+d. Consumption requirements of farmer household
+e. Working capital for maintenance of farm assets and activities allied to agriculture, like
+dairy animals, inland fishery etc.
+f. Investment credit requirement for agriculture and allied activities like pump sets,
+sprayers, dairy animals etc.
+Note: The aggregate of components a. to e. above will form the short term credit limit portion and the
+aggregate of components under f will form the long term credit limit portion..
+4. Eligibility
+i. All Farmers – Individuals / Joint borrowers who are owner cultivators
+ii. Tenant Farmers, Oral Lessees & Share Croppers
+iii. SHGs or Joint Liability Groups of Farmers including tenant farmers, share croppers etc.
+5.. Fixation of credit limit/Loan amount
+The credit limit under the Kisan Credit Card may be fixed as under:
+5.1. All farmers other than marginal farmers:
+5.1.1. The short term limit to be arrived for the first year: For farmers raising single crop in a
+year: Scale of finance for the crop (as decided by District Level Technical Committee) x Extent of area
+cultivated + 10% of limit towards post-harvest / household / consumption requirements + 20% of limit
+towards repairs and maintenance expenses of farm assets + crop insurance, PAIS & asset insurance.
+5.1.2. Limit for second & subsequent year :First year limit for crop cultivation purpose arrived at as
+above plus 10% of the limit towards cost escalation / increase in scale of finance for every successive
+year ( 2nd , 3rd, 4th and 5th year) and estimated Term loan component for the tenure of Kisan Credit
+Card, i.e., five years. (Illustration I)
+5.1.3. For farmers raising more than one crop in a year, the limit is to be fixed as above depending
+upon the crops cultivated as per proposed cropping pattern for the first year and an additional 10%
+of the limit towards cost escalation / increase in scale of finance for every successive year (2nd, 3rd,
+4th and 5th year). It is assumed that the farmer adopts the same cropping pattern for the remaining
+four years also. In case the cropping pattern adopted by the farmer is changed in the subsequent
+year, the limit may be reworked. (Illustration I)
+5.1.4. Term loans for investments towards land development, minor irrigation, purchase of farm
+equipments and allied agricultural activities. The banks may fix the quantum of credit for term and
+working capital limit for agricultural and allied activities, etc., based on the unit cost of the asset/s
+proposed to be acquired by the farmer, the allied activities already being undertaken on the farm, the
+bank’s judgment on repayment capacity vis-a-vis total loan burden devolving on the farmer, including
+existing loan obligations.
+5.1.5. The long term loan limit is based on the proposed investments during the five year period and
+the bank’s perception on the repaying capacity of the farmer
+5.1.6. Maximum Permissible Limit: The short term loan limit arrived for the 5th year plus the
+estimated long term loan requirement will be the Maximum Permissible Limit (MPL) and treated as
+the Kisan Credit Card Limit.
+5.1.7. Fixation of Sub-limits for other than Marginal Farmers:
+i. Short term loans and term loans are governed by different interest rates. Besides, at present,
+short term crop loans are covered under Interest Subvention Scheme/ Prompt Repayment Incentive
+scheme. Further, repayment schedule and norms are different for short term and term loans. Hence,
+in order to have operational and accounting convenience, the card limit is to be bifurcated into
+separate sub limits for short term cash credit limit cum savings account and term loans.
+ii. Drawing limit for short term cash credit should be fixed based on the cropping pattern and
+the amounts for crop production, repairs and maintenance of farm assets and consumption may be
+allowed to be drawn as per the convenience of the farmer. In case the revision of scale of finance for
+any year by the district level committee exceeds the notional hike of 10% contemplated while fixing
+the five year limit, a revised drawable limit may be fixed and the farmer be advised about the same. In
+case such revisions require the card limit itself to be enhanced (4th or 5th year), the same may be
+done and the farmer be so advised. For term loans, installments may be allowed to be withdrawn
+based on the nature of investment and repayment schedule drawn as per the economic life of the
+proposed investments. It is to be ensured that at any point of time the total liability should be within
+the drawing limit of the concerned year.
+iii. Wherever the card limit/liability so arrived warrants additional security, the banks may take
+suitable collateral as per their policy.
+5.2. For Marginal Farmers:
+A flexible limit of Rs.10,000 to Rs.50,000 be provided (as Flexi KCC) based on the land holding and
+crops grown including post harvest warehouse storage related credit needs and other farm expenses,
+consumption needs, etc., plus small term loan investments like purchase of farm equipments,
+establishing mini dairy/backyard poultry as per assessment of Branch Manager without relating it to
+the value of land. The composite KCC limit is to be fixed for a period of five years on this basis.
+Wherever higher limit is required due to change in cropping pattern and/or scale of finance, the limit
+may be arrived at as per the estimation indicated at para 5.1 . (Illustration II)
+6. Disbursement :
+6.1. The short term component of the KCC limit is in the nature of revolving cash credit facility. There
+should be no restriction in number of debits and credits. However, each installment of the drawable
+limit drawn in a particular year will have to be repaid within 12 months. The drawing limit for the
+current season/year could be allowed to be drawn using any of the following delivery channels.
+a. Operations through branch
+b. Operations using Cheque facility
+c. Withdrawal through ATM / Debit cards
+d. Operations through Business Correspondents and ultra thin branches
+e. Operation through PoS available in Sugar Mills/ Contract farming companies, etc., especially for tie-
+up advances
+f. Operations through PoS available with input dealers
+g. Mobile based transfer transactions at agricultural input dealers and mandies.
+Note: (e), (f) & (g) to be introduced as early as possible so as to reduce transaction costs of both the
+bank as well as the farmer.
+6.2. The long term loan for investment purposes may be drawn as per installment fixed.
+7.As the CC limit and the term loan limit are two distinct components of the aggregate card
+limit bearing different rates of interest and repayment periods, until a composite card could be
+issued with appropriate software to separately account transactions in either sub limits, two
+separate electronic cards may be issued.
+8. Validity / Renewal
+i. Banks may determine the validity period of KCC and its periodic review.
+ii. The review may result in continuation of the facility, enhancement of the limit or cancellation
+of the limit / withdrawal of the facility, depending upon increase in cropping area / pattern and
+performance of the borrower.
+iii. When the bank has granted extension and/or re-schedulement of the period of repayment on
+account of natural calamities affecting the farmer, the period for reckoning the status of operations as
+satisfactory or otherwise would get extended together with the extended amount of limit. When the
+proposed extension is beyond one crop season, the aggregate of debits for which extension is
+granted is to be transferred to a separate term loan account with stipulation for repayment in
+installments.
+9. Rate of Interest (ROI):
+Rate of Interest will be linked to Base Rate and is left to the discretion of the banks.
+10. Repayment Period:
+10.1.Each withdrawal under the short term sub-limit as estimated under (a) to (e) of Para 3 above ,be
+allowed to be liquidated in 12 months without the need to bring the debit balance in the account to
+zero at any point of time. No withdrawal in the account should remain outstanding for more than 12
+months.
+10.2. The term loan component will be normally repayable within a period of 5 years depending on the
+type of activity / investment as per the existing guidelines applicable for investment credit.
+10.3. Financing banks at their discretion may provide longer repayment period for term loan
+depending on the type of investment.
+11. Margin: To be decided by banks.
+12. Security:
+12.1. Security will be applicable as per RBI guidelines prescribed from time to time.
+12.2. Security requirement may be as under:
+i. Hypothecation of crops up to card limit of Rs. 1.00 lakh as per the extant RBI guidelines.
+ii. With tie-up for recovery: Banks may consider sanctioning loans on hypothecation of crops
+upto card limit of Rs.3.00 lakh without insisting on collateral security.
+iii. Collateral security may be obtained at the discretion of Bank for loan limits above Rs.1.00
+lakh in case of non tie-up and above Rs.3.00 lakh in case of tie-up advances.
+iv. In States where banks have the facility of on-line creation of charge on the land records, the
+same shall be ensured.
+13. Other features:
+Uniformity to be adopted in respect of following:
+i. Interest Subvention/Incentive for prompt repayment as advised by Government of India and /
+or State Governments. The bankers will make the farmers aware of this facility.
+ii. The KCC holder should have the option to take benefit of Crop Insurance, Assets Insurance,
+Personal Accident Insurance Scheme (PAIS), and Health Insurance (wherever product is available
+and have premium paid through his KCC account). Necessary premium will have to be paid on the
+basis of agreed ratio between bank and farmer to the insurance companies from KCC accounts.
+Farmer beneficiaries should be made aware of the insurance cover available and their consent is to
+be obtained, at the application stage itself.
+iii. One time documentation at the time of first availment and thereafter simple declaration (about
+crops raised / proposed) by farmer from the second year onwards.
+14. Classification of account as NPA:
+14.1. With a view to simplifying asset-classification, the Committee has recommended that an account
+could be treated as “standard”, when the balance outstanding is less than or equal to drawing limit
+[short term (crop) loan] at any point of time during the preceding one year. In other words, it is
+suggested that the short term loan (with major component of crop loan) sanctioned on the KCC can
+be given the same treatment as a “cash credit” account for the purpose of applying prudential norms
+and should not be treated as “out of order” if the balance outstanding is less than or equal to the
+drawing limit and each drawl is repaid within a period of 12 months. Term loan under KCC has fixed
+repayment schedule and is to be governed by extant prudential norms.
+14.2. Charging of interest is to be done uniformly as is applicable to agricultural advance.
+15. Processing fee may be decided by banks.
+16. Other Conditions Suggested by Government of India while implementing the revised guidelines of
+KCC Scheme:
+• In case the farmer applies for loan against the warehouse receipt of his produce; the banks
+would consider such requests as per the established procedure and guidelines. However,
+when such loans are sanctioned, these should be linked with the crop loan account, if any
+and the crop loan outstanding in the account could be settled at the stage of disbursal of the
+pledge loan, if the farmer desires.
+• The National Payments Corporation of India (NPCI) will design the card of the KCC to be
+adopted by all the banks with their branding.
+• All new KCC must be issued as per the revised guidelines of the KCC Scheme .Further, at the
+time of renewal of existing KCC; farmers must be issued smart card cum debit card.
+-------------------------------------------------------------------------------------------------------------------------
+Illustration I
+A. Small Farmer raising Multiple Crops in a year
+1. Assumptions:
+A. Land holding: 2 acres
+B. Cropping Pattern: Paddy - 1 acre (Scale of finance plus crop insurance per acre: Rs.11000)
+Sugarcane - 1 acre (Scale of finance plus crop insurance per acre: Rs.22,000)
+C. Investment/Allied Activities:
+(i)Establishment of 1+1 Dairy Unit in 1st Year (Unit Cost: Rs.20,000 per animal)
+(ii)Replacement of Pump set in 3rd year (Unit Cost: Rs.30,000)
+2. (i) Crop loan Component
+Cost of cultivation of 1 acre of Paddy and 1acre of Sugarcane
+(11,000+22,000) : Rs.33,000
+Add: 10% towards post harvest/household expense/consumption : Rs. 3,300
+Add: 20% towards farm maintenance : Rs. 6,600
+Total Crop Loan limit for 1st year : Rs. 42,900
+Loan Limit for 2nd year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 42900 i.e 4300) : Rs. 4,300
+: Rs. 47,200
+Loan Limit for 3rd year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 47,200 i.e., 4,700) : Rs. 4,700
+: Rs. 51,900
+Loan Limit for 4th year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 51,900 i.e 5,200) : Rs. 5,200
+:Rs.57,100
+Loan Limit for 5th year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 57100 i.e 5700) : Rs. 5,700
+:Rs. 62,800
+Say:Rs.63,000….(A)
+(ii) Term loan component:
+1st Year: Cost of 1+1 Dairy Unit : Rs.40,000
+3rd Year: Replacement of Pumpset : Rs. 30,000
+Total term loan amount :Rs.70,000…….(B)
+Maximum Permissible Limit /Kisan Credit Card Limit (A) +(B) :Rs.1,33,000
+Rs.1.33 lakh
+Note:
+Drawing Limit will be reduced every year based on repayment schedule of the term loan(s)
+availed and withdrawals will be allowed up to the drawing limit.
+B: Other Farmer raising Multiple Crops in a year
+1. Assumptions:
+2. Land Holding: 10 acres
+3. Cropping Pattern:
+Paddy- 5 acres (Scale of finance plus crop insurance per acre Rs.11,000)
+Followed by Groundnut - 5 acres (Scale of finance plus crop insurance per acre Rs.10,000)
+Sugarcane - 5 acres (Scale of finance plus crop insurance per acre Rs.22,000)
+4. Investment/Allied Activities :
+(i) Establishment 2+2 Dairy Unit in 1st
+Year ( Unit cost : Rs.1,00,000)
+(ii) Purchase of Tractor in 1st
+Year( Unit Cost : Rs.6,00,000)
+Assessment of Card Limit
+2.
+(i) Crop loan Component
+Cost of cultivation of 5 acres of Paddy, 5 Acres of Groundnut and
+5 acres of Sugarcane : Rs.2,15,000
+Add: 10% towards post harvest/household expense/consumption : Rs. 21,500
+Add: 20% towards farm maintenance : Rs. 43,000
+Total Crop Loan limit for 1st
+year :Rs.2,79,500
+Loan Limit for 2nd
+year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 2,79,500 i.e., 27,950) : Rs.27,950
+:Rs.3,07,450
+Loan Limit for 3rd
+year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 3,07,450 i.e., 30,750) : Rs.30,750
+:Rs.3,38,200
+Loan Limit for 4th
+year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 338200 i.e., 33,800) : Rs.33,800
+:Rs.3,72,000
+Loan Limit for 5th
+year
+Add: 10% of the limit towards cost escalation/increase in scale of finance
+(10% of 3,72,000 i.e., 37,200) : Rs.37,200
+:Rs.4,09,200
+Say Rs.4,09,000 … (A)
+(ii) Term loan component:
+1st
+Year: Cost of 2+2 Dairy Unit : Rs. 1,00000
+: Purchase of Tractor : Rs .6,00,000
+Total term loan amount : Rs.7,00,000…….(B)
+Note :
+Drawing Limit will be reduced every year based on repayment schedule of the term loan(s)
+availed and withdrawals will be allowed up to the drawing limit.
+Illustration II
+Assessment of KCC LIMIT
+1: Marginal Farmer raising Single Crop in a year
+1. Assumptions:
+1. Land holding: 1 acre
+2. Crops grown: Paddy (Scale of finance plus crop insurance per acre: Rs.11,000)
+3. There is no change in Cropping Pattern for 5 years
+4. Allied Activities to be financed – One Non Descript Milch Animal ( Unit Cost Rs: 15,000)
+2. Assessment of Card Limit:
+(i) Crop loan Component (Cost of cultivation for 1 acre of Paddy) : Rs.11,000
+Add: 10% towards post harvest/household expense/consumption : Rs. 1,100
+Add: 20% towards farm maintenance : Rs. 2,200
+Total Crop Loan limit for 1st year : Rs.14,300……A1
+(ii) Term Loan Component
+Cost of One Milch Animal : Rs.15,000…… B
+1st Year Composite KCC Limit : (A1) + (B) : Rs.29,300
+2nd Year :
+Crop loan component:
+A1 plus 10% of crop loan limit (A1) towards cost escalation/
+increase in scale of finance [14,300+(10% of 14300= 1430)] : Rs.15,730……A2
+Maximum Permissible Limit /Kisan Credit Card Limit (A) +(B) :
+Rs.11,09,000
+2nd Year Composite KCC Limit : A2+B ( 15730+15000) : Rs.30,730
+3rd Year :
+Crop loan component:
+A2 plus 10% of crop loan limit (A2) towards cost escalation/
+increase in scale of finance [15,730+(10% of 15730= 1570)] : Rs.17,300…..A3
+3rd Year Composite KCC Limit : A3+B ( 17,300+15,000) : Rs.32,300
+4th Year :
+Crop loan component:
+A3 plus 10% of crop loan limit (A3) towards cost escalation/
+increase in scale of finance [17,300+(10% of 17300= 1730)] : Rs.19,030…..A4
+4th Year Composite KCC Limit : A4+B ( 19,030+15,000) : Rs.34,030
+5th Year :
+Crop loan component:
+A4 plus 10% of crop loan limit (A4) towards cost escalation/
+increase in scale of finance [19,030+(10% of 19,030= 1,900)] : Rs.20,930…..A5
+5th Year Composite KCC Limit : A5+B ( 20,930+15,000) : Rs.35,930
+Say Rs.36,000
+Maximum Permissible Limit / Composite KCC Limit : Rs.36000
+NOTE: All the above costs estimated are illustrative in nature. The recommended scale of
+finance / unit costs may be taken into account while finalising the credit limit.
+Part II – Delivery Channels - Technical features
+1. Issue of cards
+The beneficiaries under the scheme will be issued with a Smart card/ Debit card (Biometric smart card
+compatible for use in the ATMs/Hand held Swipe Machines and capable of storing adequate
+information on farmers identity, assets, land holdings and credit profile etc).All KCC holders should be
+provided with any one or a combination of the following types of cards:
+2. Type of Card:
+A magnetic stripe card with PIN (Personal Identification Number) with an ISO IIN (International
+Standards Organization International Identification Number) to enable access to all banks ATMs
+and micro ATMs
+In cases where the Banks would want to utilize the centralized biometric authentication
+infrastructure of the UIDAI (Aadhaar authentication), Debit cards with magnetic stripe and PIN
+with ISO IIN with biometric authentication of UIDAI can be provided.
+Debit Cards with magnetic stripe and only biometric authentication can also be provided
+depending on customer base of the bank. Till such time, UIDAI becomes widespread, if the banks
+want to get started without inter-operability using their existing centralized bio metric
+infrastructure, banks may do so.
+Banks may choose to issue EMV (Europay, MasterCard and VISA, a global standard for inter-
+operation of integrated circuit cards) compliant chip cards with magnetic stripe and pin with ISO
+IIN.
+Further, the biometric authentication and smart cards may follow the common open standards
+prescribed by IDRBT and IBA. This will enable them to transact seamlessly with input dealers as
+also enable them to have the sales proceeds credited to their accounts when they sell their output
+at mandies, procurement centers, etc.
+All the cooperative banks shall migrate to CBS platform at the earliest so as to implement the
+technological innovations in KCC as indicated above. Wherever CBS in the bank has not been in
+place , a pass book or a credit card cum pass book incorporating the name, address, particulars of
+land holding, borrowing limit, validity period etc. may be issued fir the time being which will serve both
+as an identity card as well as facilitate recording of the transactions on an ongoing basis. The card,
+among others, would provide for a photograph of the holder.
+3. Delivery Channels:
+The following delivery channels shall be put in place to start with so that the Kisan Credit Card is
+used by the farmers to effectively transact their operations in their KCC account.
+1. Withdrawal through ATMs / Micro ATM
+2. Withdrawal through BCs using smart cards.
+3. PoS machine through input dealers
+4. Mobile Banking with IMPS capabilities/ IVR
+5. Aadhaar enabled Cards.
+4. Mobile Banking/Other Channels:
+Provide Mobile banking functionality for KCC Cards/Accounts as well along with Interbank Mobile
+Payment Service (IMPS of NPCI) capability to allow customers to use this inter-operable IMPS for
+funds transfer between banks and also to do merchant payment transactions as additional
+capability for purchases of agricultural inputs.
+This mobile banking should ideally be on Unstructured Supplementary Data (USSD) platform for
+wider and safer acceptance. However, the banks can also offer this on other fully encrypted
+modes (application based or SMS based) to make use of the recent relaxation on transaction
+limits. Banks can also offer unencrypted mobile banking subject to RBI regulations on transaction
+limits.
+It is necessary that Mobile based transaction platforms enabling transactions in the KCC use easy
+to use SMS based solution with authentication thru’ MPIN. Such solutions also need to be
+enabled on IVR in local language to ensure transparency and security. Such mobile based
+payment systems should be encouraged by all the banks by creating awareness and by doing
+proper customer education.
+A flow chart for such mobile based transaction system for KCC limits is enclosed for ready
+reference.
+With the existing infrastructure available with banks, all KCC holders should be provided with any
+one or a combination of the following types of cards:
+9 Debit cards (magnetic stripe card with PIN) enabling farmers to operate the limit through
+all banks ATMs/Micro ATMs
+9 Debit Cards with magnetic stripe and biometric authentication.
+9 Smart cards for doing transactions through PoS machines held by Business
+Correspondents, input dealers, traders and Mandies.
+9 EMV compliant chip cards with magnetic stripe and pin with ISO IIN.
+In addition, the banks having a call centre/Inter active Voice Response (IVR), may provide SMS
+based mobile banking with a call back facility from bank for mobile PIN (MPIN) verification through
+IVR, thus making a secured SMS based mobile banking facility available to card holders.
+

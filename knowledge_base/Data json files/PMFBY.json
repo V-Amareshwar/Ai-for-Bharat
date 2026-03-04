@@ -1,0 +1,73 @@
+{
+  "scheme_id": "PMFBY",
+  "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+  "category": "Crop Insurance",
+  "target_group": "Farmers growing notified crops in notified areas",
+  "objective": "Provide financial protection against crop loss due to natural disasters, pests, and diseases.",
+
+  "benefits": {
+    "premium_rates": {
+      "kharif_food_oilseed": "2%",
+      "rabi_food_oilseed": "1.5%",
+      "commercial_horticulture": "5%"
+    },
+    "coverage": [
+      "Natural disasters (drought, flood, hailstorm)",
+      "Pests and diseases",
+      "Post-harvest losses (up to 14 days)",
+      "Prevented sowing",
+      "Localised calamities"
+    ],
+    "claim_processing_goal": "Within 2 months of harvest"
+  },
+
+  "eligibility_rules": {
+    "must_be_farmer": true,
+    "allowed_farmer_types": [
+      "Owner farmer",
+      "Tenant farmer",
+      "Sharecropper"
+    ],
+    "must_grow_notified_crop": true,
+    "must_be_in_notified_area": true,
+    "must_have_land_record_or_tenure_agreement": true,
+    "must_apply_within_sowing_period": true
+  },
+
+  "exclusion_rules": {
+    "non_notified_area": true,
+    "crop_loss_outside_crop_cycle": true,
+    "farmer_negligence": true,
+    "non_payment_of_premium": true,
+    "compensation_received_from_other_source": true
+  },
+
+  "required_documents": [
+    "Passport Size Photograph",
+    "Aadhaar / PAN / Voter ID",
+    "Bank Passbook",
+    "Land Record / Land Possession Certificate",
+    "Crop Sowing Declaration"
+  ],
+
+  "required_user_fields": [
+    "full_name",
+    "mobile_number",
+    "aadhaar_number",
+    "state",
+    "district",
+    "village",
+    "farmer_type",
+    "crop_type",
+    "crop_season",
+    "land_area",
+    "bank_account_number",
+    "ifsc_code"
+  ],
+
+  "application_modes": [
+    "PMFBY Portal",
+    "Common Service Centre (CSC)",
+    "Bank"
+  ]
+}
