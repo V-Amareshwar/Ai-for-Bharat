@@ -12,7 +12,7 @@ from .services.bedrock_service import ask_didi_bedrock
 app = FastAPI()
 
 # ==========================
-# CORS
+# CORS & FOLDER SETUP
 # ==========================
 app.add_middleware(
     CORSMiddleware,
@@ -22,15 +22,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ==========================
-# FOLDER SETUP
-# ==========================
 if not os.path.exists("static"):
     os.makedirs("static")
 if not os.path.exists("temp_audio"):
     os.makedirs("temp_audio")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# ==========================
+# HACKATHON MEMORY STORE
+# ==========================
+user_sessions = {}
 
 # ==========================
 # CITIZEN VOICE ENDPOINT
@@ -41,7 +43,6 @@ async def process_voice(
     user_id: str = Form("9876543210"),
     language: str = Form("hi-IN")
 ):
-    # 1. Save the incoming audio file locally
     temp_path = f"temp_audio/{uuid4().hex}_{audio_file.filename}"
     with open(temp_path, "wb") as buffer:
         buffer.write(await audio_file.read())
@@ -49,65 +50,73 @@ async def process_voice(
     print(f"\n--- NEW REQUEST ---")
     print(f"Processing audio from user: {user_id}")
 
-    # 2. AWS Transcribe (With Hackathon Bypass)
+    # 1. AWS Transcribe (Using Hackathon Bypass for now)
     try:
-        citizen_question = transcribe_audio(temp_path, S3_BUCKET_NAME, language)
-        print(f"Citizen asked (Real): {citizen_question}")
+        raise Exception("Triggering Bypass until AWS is verified")
     except Exception as e:
-        print(f"⚠️ AWS Transcribe Error: {e}")
-        print("🚀 HACKATHON BYPASS ACTIVATED: Using simulated text.")
-        # Fallback text so Bedrock and Polly still work for the demo
-        citizen_question = "I am a street vendor in the city. What loan can I get?"
+        print("🚀 HACKATHON BYPASS ACTIVATED")
+        # Simulating the final user confirmation
+        citizen_question = "Yes, please submit my PM SVANidhi application. I have provided all details."
         print(f"Citizen asked (Simulated): {citizen_question}")
 
-    # 3. AWS Bedrock: Get AI response from Knowledge Base
-    try:
-        ai_text_response = ask_didi_bedrock(citizen_question)
-        print(f"Didi's Answer: {ai_text_response}")
-    except Exception as e:
-        print(f"Bedrock Error: {e}")
-        ai_text_response = "I'm sorry, I am having trouble thinking right now."
+    # 2. AWS Bedrock: Get AI response AND Memory Session
+    current_session_id = user_sessions.get(user_id)
+    bedrock_result = ask_didi_bedrock(citizen_question, current_session_id)
+    
+    ai_data = bedrock_result["ai_data"]
+    new_session_id = bedrock_result["session_id"]
+    user_sessions[user_id] = new_session_id
 
-    # 4. Update Mock Database
-    mock_applications_db[user_id] = {
-        "id": f"PM-{uuid4().hex[:6].upper()}",
-        "user_id": user_id,
-        "scheme": "PM SVANidhi", # Hardcoded for the bypass demo
-        "status": "In Progress",
-        "timestamp": time.time()
-    }
+    # Extract the specific JSON pieces
+    speech_text = ai_data.get("speech_response", "I am processing your details.")
+    extracted_info = ai_data.get("extracted_data", {})
+    
+    # PHASE 3: Grab the submission flag from Didi's brain
+    is_ready_to_submit = ai_data.get("is_ready_to_submit", False)
 
-    # 5. AWS Polly: Convert AI text to speech
+    print(f"Didi says: {speech_text}")
+    print(f"Extracted Data: {extracted_info}")
+    print(f"Ready to Submit: {is_ready_to_submit}")
+
+    # 3. Update Database Form Data
+    if user_id not in mock_applications_db:
+        mock_applications_db[user_id] = {
+            "id": f"APP-{uuid4().hex[:6].upper()}",
+            "user_id": user_id,
+            "status": "In Progress",
+            "timestamp": time.time(),
+            "form_data": {}
+        }
+    
+    # Dynamically merge whatever Bedrock extracted
+    mock_applications_db[user_id]["form_data"].update(extracted_info)
+
+    # PHASE 3: The Submission Trigger
+    if is_ready_to_submit:
+        mock_applications_db[user_id]["status"] = "Submitted"
+        print(f"✅ Form officially submitted for {user_id}!")
+
+    # 4. AWS Polly: Convert AI text to speech
     try:
-        mp3_audio_bytes = synthesize_speech(ai_text_response)
+        mp3_audio_bytes = synthesize_speech(speech_text)
         audio_filename = f"response_{user_id}_{uuid4().hex[:4]}.mp3"
         with open(f"static/{audio_filename}", "wb") as f:
             f.write(mp3_audio_bytes)
         audio_url = f"/static/{audio_filename}"
     except Exception as e:
         print(f"Polly Error: {e}")
-        audio_url = None # Frontend will fallback to text-only if Polly fails
+        audio_url = None 
 
-    # ==========================================
-    # LIVE FORM DATA FOR THE FRONTEND
-    # ==========================================
-    current_extracted_data = {
-        "Name": "रामू (Ramu)",
-        "Mobile Number": user_id,
-        "Aadhaar Number": None,
-        "Status": "Voice Processed"
-    }
-
-    # Clean up the temporary uploaded file
     if os.path.exists(temp_path):
         os.remove(temp_path)
 
-    # Return the final JSON payload
+    # 5. Return the payload
     return {
         "status": "success",
-        "ai_response": ai_text_response,
+        "ai_response": speech_text,
         "audio_url": audio_url,
-        "extracted_data": current_extracted_data
+        "extracted_data": mock_applications_db[user_id]["form_data"],
+        "application_status": mock_applications_db[user_id]["status"] # Send the status to the frontend
     }
 
 # ==========================
@@ -123,5 +132,20 @@ def approve_application(application_id: str):
     for key, app_data in mock_applications_db.items():
         if app_data.get("id") == application_id or key == application_id:
             mock_applications_db[key]["status"] = "Approved"
+            return {"status": "success"}
+    raise HTTPException(status_code=404, detail="Application Not Found")
+
+# NEW: The Reject route that accepts a reason
+from pydantic import BaseModel
+
+class RejectPayload(BaseModel):
+    reason: str
+
+@app.put("/api/v1/dummy-gov/applications/{application_id}/reject")
+def reject_application(application_id: str, payload: RejectPayload):
+    for key, app_data in mock_applications_db.items():
+        if app_data.get("id") == application_id or key == application_id:
+            mock_applications_db[key]["status"] = "Rejected"
+            mock_applications_db[key]["rejection_reason"] = payload.reason
             return {"status": "success"}
     raise HTTPException(status_code=404, detail="Application Not Found")
