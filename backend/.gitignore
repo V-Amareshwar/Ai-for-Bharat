@@ -43,3 +43,10 @@ build/
 
 # Logs
 *.log
+
+# Persistent Database (contains citizen PII — never commit)
+database.json
+database.json.tmp
+
+# Uploaded audio files from citizens
+temp_audio/

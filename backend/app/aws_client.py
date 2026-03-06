@@ -1,48 +1,71 @@
-import boto3
-import time
-import uuid
 import os
+import boto3
+from groq import Groq
+from dotenv import load_dotenv
 from .config import AWS_REGION
 
-# Client Initializations
-transcribe_client = boto3.client("transcribe", region_name=AWS_REGION)
-polly_client = boto3.client("polly", region_name=AWS_REGION)
-s3_client = boto3.client("s3", region_name=AWS_REGION)
+# Load the environment variables from the .env file
+load_dotenv()
 
-def transcribe_audio(file_path: str, bucket_name: str, language_code: str = "hi-IN") -> str:
-    job_name = f"transcription-{uuid.uuid4().hex}"
-    s3_key = f"temp-audio/{os.path.basename(file_path)}"
+# ==========================================
+# GROQ API KEY ROTATION (Comma-Separated)
+# ==========================================
+# 1. Fetch the single string from the .env file (defaults to empty string if missing)
+keys_string = os.getenv("GROQ_API_KEYS", "")
+
+# 2. Split the string by commas and clean up any accidental spaces
+GROQ_API_KEYS = [key.strip() for key in keys_string.split(",") if key.strip()]
+
+if not GROQ_API_KEYS:
+    raise ValueError("CRITICAL ERROR: No Groq API keys found in the .env file! Please check your .env file.")
+
+def transcribe_audio(audio_path: str, bucket_name: str = None, language: str = None) -> str:
+    """
+    Transcribes audio using Groq's Whisper API with automatic key rotation.
+    (Bucket and language parameters are ignored, kept for compatibility with main.py)
+    """
+    last_error = None
     
-    # 1. Upload to S3 (Transcribe requirement)
-    s3_client.upload_file(file_path, bucket_name, s3_key)
-    job_uri = f"s3://{bucket_name}/{s3_key}"
+    # Loop through the keys until one works
+    for index, api_key in enumerate(GROQ_API_KEYS):
+        try:
+            client = Groq(api_key=api_key)
+            
+            with open(audio_path, "rb") as file:
+                transcription = client.audio.transcriptions.create(
+                    file=(os.path.basename(audio_path), file.read()),
+                    model="whisper-large-v3"
+                )
+            
+            print(f"✅ Transcription successful using Key #{index + 1}")
+            return transcription.text
 
-    # 2. Start AWS Transcribe Job
-    transcribe_client.start_transcription_job(
-        TranscriptionJobName=job_name,
-        Media={'MediaFileUri': job_uri},
-        MediaFormat='webm', # Matches your Next.js blob type
-        LanguageCode=language_code
-    )
+        except Exception as e:
+            print(f"⚠️ Groq Key #{index + 1} Failed: {e}")
+            last_error = e
+            continue # If a key fails (rate limit/invalid), instantly try the next one
 
-    # 3. Poll for Completion (Max 30s)
-    for _ in range(30):
-        status = transcribe_client.get_transcription_job(TranscriptionJobName=job_name)
-        if status['TranscriptionJob']['TranscriptionJobStatus'] in ['COMPLETED', 'FAILED']:
-            break
-        time.sleep(1)
+    # If the loop finishes and all keys are dead:
+    print("❌ ALL GROQ KEYS FAILED.")
+    raise Exception(f"Transcription failed. Last error: {last_error}")
 
-    if status['TranscriptionJob']['TranscriptionJobStatus'] == 'COMPLETED':
-        import requests
-        transcript_url = status['TranscriptionJob']['Transcript']['TranscriptFileUri']
-        transcript_text = requests.get(transcript_url).json()['results']['transcripts'][0]['transcript']
-        
-        # Cleanup
-        transcribe_client.delete_transcription_job(TranscriptionJobName=job_name)
-        return transcript_text
-    
-    raise Exception("Transcription failed or timed out.")
-
+# ==========================================
+# AWS POLLY (Text-to-Speech)
+# ==========================================
 def synthesize_speech(text: str) -> bytes:
-    response = polly_client.synthesize_speech(Text=text, OutputFormat="mp3", VoiceId="Aditi")
-    return response["AudioStream"].read()
+    """
+    Converts Didi's text response into MP3 audio using AWS Polly.
+    """
+    client = boto3.client('polly', region_name=AWS_REGION)
+    
+    try:
+        response = client.synthesize_speech(
+            Text=text,
+            OutputFormat='mp3',
+            VoiceId='Kajal', # Hindi/Bilingual Indian voice
+            Engine='neural'
+        )
+        return response['AudioStream'].read()
+    except Exception as e:
+        print(f"Polly Synthesis Error: {e}")
+        raise e
