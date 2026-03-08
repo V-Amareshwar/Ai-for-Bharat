@@ -1,0 +1,66 @@
+{
+  "scheme_id": "PMAYU",
+  "scheme_name": "Pradhan Mantri Awas Yojana - Urban",
+  "category": "Affordable Housing",
+  "target_group": "Urban households from EWS, LIG and MIG income groups",
+  "objective": "Provide affordable housing and interest subsidy on home loans for eligible urban families.",
+
+  "income_categories": {
+    "EWS": {
+      "income_limit": 300000,
+      "max_house_size_sqm": 30
+    },
+    "LIG": {
+      "income_min": 300001,
+      "income_max": 600000,
+      "max_house_size_sqm": 60
+    },
+    "MIG_I": {
+      "income_min": 600001,
+      "income_max": 1200000,
+      "max_house_size_sqm": 160
+    },
+    "MIG_II": {
+      "income_min": 1200001,
+      "income_max": 1800000,
+      "max_house_size_sqm": 200
+    }
+  },
+
+  "eligibility_rules": {
+    "annual_income_less_than_18_lakh": true,
+    "must_not_own_pucca_house": true,
+    "family_structure": "husband_wife_unmarried_children",
+    "city_must_be_under_scheme": true,
+    "must_not_have_taken_other_housing_scheme": true
+  },
+
+  "required_documents": [
+    "Aadhaar Card",
+    "Income Certificate / Self Affidavit",
+    "PAN Card / Voter ID / Driving License",
+    "Salary Slips or IT Returns",
+    "Bank Account Statement",
+    "Property Valuation Certificate",
+    "Affidavit declaring no pucca house ownership"
+  ],
+
+  "required_user_fields": [
+    "full_name",
+    "mobile_number",
+    "aadhaar_number",
+    "annual_household_income",
+    "family_members",
+    "city",
+    "state",
+    "bank_account_number",
+    "ifsc_code",
+    "property_type_requested"
+  ],
+
+  "application_modes": [
+    "PMAY Urban Portal",
+    "Common Service Centre (CSC)",
+    "Urban Local Body Office"
+  ]
+}

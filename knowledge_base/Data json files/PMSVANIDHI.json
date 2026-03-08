@@ -1,0 +1,60 @@
+{
+  "scheme_id": "PMSVANIDHI",
+  "scheme_name": "PM Street Vendor’s AtmaNirbhar Nidhi (PM SVANidhi)",
+  "category": "Micro Credit for Street Vendors",
+  "target_group": "Urban street vendors",
+  "objective": "Provide collateral-free working capital loans to street vendors to restart and expand their businesses.",
+  
+  "loan_structure": {
+    "first_loan": 10000,
+    "second_loan": 20000,
+    "third_loan": 50000,
+    "interest_subsidy_percent": 7,
+    "repayment_period_months": 12,
+    "digital_cashback_max_per_month": 100
+  },
+
+  "eligibility_rules": {
+    "must_be_street_vendor": true,
+    "must_vend_in_ulb_area": true,
+    "vendor_identification_required": [
+      "Certificate of Vending",
+      "Identity Card from ULB",
+      "Survey Reference Number",
+      "Letter of Recommendation from ULB/TVC"
+    ]
+  },
+
+  "exclusion_rules": {
+    "not_street_vendor": true,
+    "no_ulb_authorization": true
+  },
+
+  "required_documents": [
+    "Certificate of Vending or Identity Card",
+    "Letter of Recommendation (if applicable)",
+    "Aadhaar Card",
+    "Voter ID / Driving License / PAN / MNREGA Card",
+    "Bank Passbook or Account Statement"
+  ],
+
+  "required_user_fields": [
+    "full_name",
+    "mobile_number",
+    "aadhaar_number",
+    "vendor_category",
+    "survey_reference_number",
+    "ulb_name",
+    "business_type",
+    "bank_account_number",
+    "ifsc_code"
+  ],
+
+  "application_modes": [
+    "PM SVANidhi Portal",
+    "Common Service Centre (CSC)",
+    "Urban Local Body Office"
+  ],
+
+  "helpline": "1800111979"
+}

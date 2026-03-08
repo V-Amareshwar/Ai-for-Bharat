@@ -1,0 +1,48 @@
+{
+  "scheme_id": "PMKISAN",
+  "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+  "category": "Farmer Income Support",
+  "target_group": "Landholding farmer families",
+  "objective": "To supplement financial needs of landholding farmer families for crop health and domestic needs.",
+  "benefits": {
+    "annual_amount": 6000,
+    "installments": 3,
+    "installment_amount": 2000,
+    "payment_mode": "Direct Benefit Transfer (DBT)"
+  },
+  "eligibility_rules": {
+    "citizenship_required": true,
+    "must_be_landholding_farmer": true,
+    "must_have_cultivable_land": true
+  },
+  "exclusion_rules": {
+    "institutional_land_holder": true,
+    "constitutional_post_holder": true,
+    "minister_or_mla_mp": true,
+    "govt_employee_serving_or_retired": true,
+    "pension_above_10000": true,
+    "income_tax_payer_last_year": true,
+    "professional_registered_doctor_engineer_lawyer_ca_architect": true,
+    "non_resident_indian": true
+  },
+  "required_documents": [
+    "Aadhaar Card",
+    "Landholding papers",
+    "Savings Bank Account details"
+  ],
+  "required_user_fields": [
+    "full_name",
+    "aadhaar_number",
+    "date_of_birth",
+    "mobile_number",
+    "bank_account_number",
+    "ifsc_code",
+    "state",
+    "district",
+    "village",
+    "land_survey_number",
+    "land_area"
+  ],
+  "application_mode": "Online via Common Service Centers (CSCs)",
+  "beneficiary_status_check": "Using Aadhaar number"
+}

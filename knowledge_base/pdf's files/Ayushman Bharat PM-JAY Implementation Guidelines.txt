@@ -1,0 +1,416 @@
+Beneficiary
+Identification
+Guidelines
+AYUSHMAN BHARAT – PRADHAN MANTRI JAN AROGYA
+YOJANA (AB PM-JAY)
+Page 1 of 15
+Beneficiary Identification Guidelines
+Table of Contents
+GUIDELINES ON PROCESS OF BENEFICIARY IDENTIFICATION...........................................................................2
+1 BRIEF PROCESS FLOW .................................................................................................................................................2
+2 DETAILED STEPS FOR BENEFICIARY IDENTIFICATION AND ISSUANCE OF E-CARD .....................................................4
+3 PROCESS FLOW CHART FOR BENEFICIARY IDENTIFICATION ......................................................................................9
+4 IDENTITY DOCUMENT FOR A FAMILY MEMBER...........................................................................................................11
+5 SEARCHING THE AB PM-JAY DATABASE ................................................................................................................11
+6 SEARCHING THE AB PM-JAY DATABASE FOR VALID RSBY BENEFICIARIES ........................................................12
+7 LINKING FAMILY IDENTIFICATION DOCUMENT WITH THE AB PM-JAY FAMILY.........................................................13
+8 APPROVAL BY INSURANCE COMPANY/TRUST ...........................................................................................................13
+Page 2 of 15
+Beneficiary Identification Guidelines
+Guidelines on Process of Beneficiary Identification
+1 Brief Process Flow
+The core principle for finalizing the operational guidelines for proposed AB PM-JAY is to construct a broad
+framework as guiding posts for simplifying the implementation of the Mission under the ambit of the policy
+and the technology while providing requisite flexibility to the States to optimally chalk out the activities
+related to implementation in light of the peculiarities of their own State/UT, as ownership of implementation
+of scheme lies with them.
+A. AB PM-JAY will target about 10.74 crore poor, deprived rural families and identified occupational
+category of urban workers’ families as per the latest Socio-Economic Caste Census (SECC) data, both
+rural and urban. Additionally, all such enrolled families under RSBY that do not feature in the targeted
+groups as per SECC data will be included as well.
+B. States covering a much larger population than the AB PM-JAY beneficiary list will need to:
+i. Provide a declaration that their eligibility criteria cover AB PM-JAY beneficiaries.
+ii. Setup a process to ensure any family in AB PM-JAY list who may be missed under the State’s
+criteria is covered when they seek care.
+iii. Beneficiaries obtaining treatment should be tagged if they are AB PM-JAY beneficiaries. Reports
+to MoHFW/ NHA will need to be provided for these beneficiaries.
+iv. Link all AB PM-JAY beneficiaries with the State’s Scheme ID and Aadhaar in a defined time period.
+C. State/UT will be responsible for carrying out Information, Education and Communication (IEC) activities
+amongst targeted families such that they are aware of their entitlement, benefit cover, empanelled
+hospitals and process to avail the services under AB PM-JAY. This will include leveraging village health
+and nutrition days, making available beneficiary family list at Panchayat office, visit of ASHA workers
+to each target family and educating them about the scheme, Mass media, etc. among other activities.
+The following 2 IEC activities are designed to aid in Beneficiary Identification
+i. AB PM-JAY Additional Data Collection drive at Gram Sabha’s across India took place on 30th
+April. MoHFW in collaboration with Ministry of Rural Development (MoRD) will drive collection of
+Ration Card, Mobile Number for each AB PM-JAY household. Similar exercise was carried out for
+urban beneficiaries in May 2018.
+ii. Government of India will send a personalised letter via mass mail to each targeted family through
+NHA vendors in states launching AB PM-JAY. The Asha network will be leveraged for distribution
+of these letters at the village level. This letter will include details about the scheme, toll free helpline
+number and family details and their ID under AB PM-JAY.
+Page 3 of 15
+Beneficiary Identification Guidelines
+iii. States which are primarily covering AB PM-JAY beneficiaries are encouraged to create multiple
+service locations where beneficiaries can check if they are covered. These include:
+• Contact points or kiosks set up at CSCs, PHCs, Gram Panchayat, etc
+• Empanelled Hospital
+• Self-check via mobile or web
+• Or any other contact point as deemed fit by States
+D. Beneficiary identification will include the following broad steps:
+i. The operator searches through the AB PM-JAY list to determine if the person is covered.
+ii. Search can be performed by Name and Location, Ration Card No or Mobile number (collected
+during data drive) or ID printed on the letter sent to family or RSBY URN
+iii. If the beneficiary’s name is found in the AB PM-JAY list, Aadhaar (or an alternative government
+ID) and Ration Card (or an alternative family ID) is collected against the Name / Family. Other
+family IDs include the following options:
+• Government certified list of members
+• RSBY Card: Document image (RSBY Card) to be uploaded
+• PM Letter: Document image (PM Letter) to be uploaded
+• State Specific Requirement
+In case of unavailability of either of the abovementioned family IDs, the state can decide to accept
+an Individual ID mentioning at least father/ mother/ spouse’s name as a family ID. This will be
+accepted only in such cases where both individual’s name and father/ mother/ spouse’s name
+match as that in SECC/ RSBY/ State Scheme data.
+iv. The system determines a confidence score (threshold score defined by the system but not visible
+to operator/Pradhan Mantri Arogya Mitra) for the link based on how close the name / location /
+family members between the AB PM-JAY record and documents is provided.
+v. The operator sends the linked record for approval to the Insurance Company / Trust. The
+beneficiary will be advised to wait for approval from the insurance company/ trust.
+vi. The insurance company / Trust will setup a Beneficiary approval team that works on fixed service
+level agreements on turnaround time. The AB PM-JAY details and the information from the ID is
+presented to the verifier. The insurance company / Trust can either approve or recommend a case
+for rejection with reason.
+vii. All cases recommended for rejection will be scrutinised by a State team that works on fixed service
+level agreements on turnaround time. The state team will either accept rejection or approve with
+reason.
+viii. The e-card will be printed with the unique ID under AB PM-JAY and handed over to the beneficiary
+to serve as a proof for verification for future reference.
+• The beneficiary will also be provided with a booklet/ pamphlet with details about AB PM-JAY
+and process for availing services.
+Page 4 of 15
+Beneficiary Identification Guidelines
+• Presentation of this e-card (appendix 2: draft sample design) will not be mandatory for availing
+services. However, the e-card may serve as a tool for reinforcement of entitlement to the
+beneficiary and faster registration process at the hospital when needed.
+E. Addition of new family members will be allowed. This requires at least one other family member has
+been approved by the Insurance Company/Trust. Proof of being part of the same family is required in
+the form of:
+i. Name of the new member is in the family ration card or State defined family card of the identified
+family member
+ii. A marriage certificate to identified family member is available (Husband/Wife)
+iii. A birth certificate to identified family member is available
+iv. An Adoption certificate to identified family member is available
+Note: Any family member can be added in existing SECC family in-spite of his/her date of birth is after
+or before 2011 and addition of members is not limited only to new born and newly married, any member
+can be added to existing SECC family provided member can establish relation with a PMJAY verified
+beneficiary.
+F. National Portability has been released. PMAM’S can now search the beneficiary from any state other
+than their Home State and do their KYC. For this, a dropdown list is provided, which gets activated on
+clicking the” CHANGE STATE” button.
+i) Having selected the state, an alert dialog box will appear to check if user wants to change the
+state.
+ii) Upon confirming, the state is changed, and another dialog box will appear to confirm the change
+of state.
+2 Detailed Steps for Beneficiary Identification and Issuance of e-card
+AB PM-JAY will target about 10.74 crore poor, deprived rural families and identified occupational category
+of urban workers’ families as per the latest Socio-Economic Caste Census (SECC) data, both rural and
+urban. Additionally, all such enrolled families under RSBY that do not feature in the targeted groups as per
+SECC data will be included as well.
+The main steps for the above exercise are as follows:
+A. Preparatory Activities for State/ UT’s:
+Responsibility of – State Government
+Page 5 of 15
+Beneficiary Identification Guidelines
+Timeline – within a period of 15 days, after receiving the approval from MoHFW/NHA, the State/UT
+may complete the preparatory activities to initiate the implementation and beneficiary identification
+process.
+The State will need to:
+i. Ensure the availability of requisite hardware, software and allied infrastructure required for
+beneficiary identification and AB PM-JAY e-card printing. Beneficiary Identification Software/
+Application/ platform will be provided free of cost by MoHFW/NHA. Specifications for these will be
+provided by MoHFW/NHA.
+ii. Availability of printed booklets, in abundant quantities at each Contact point, which will be given to
+beneficiaries along with the AB PM-JAY e-cards after verification. The booklet/pamphlet shall
+provide the following details:
+• Details about the AB PM-JAY benefits
+• Process of taking the benefits under AB PM-JAY and policy period
+• List of the empanelled network hospitals in the district along with address and contact details
+(if available)
+• The names and details of the key contact person/persons in the district
+• Toll-free number of AB PM-JAY call centre (if available)
+• Details of DNO for any further contact
+iii. State/State Health Agency (SHA) shall identify and set-up team(s) which shall have the capacities
+to handle hardware and basic software support, troubleshooting etc.
+iv. Training of trainers for this purpose will be organised by MoHFW/NHA.
+The State shall ensure availability of above, in order to carry out all the activities laid down in this
+guideline.
+B. Preparation of AB PM-JAY target data
+Responsibility of – MoHFW
+Timeline – Preparation of SECC data by 15th March
+MoHFW has decided to use latest Socio-Economic Caste Census (SECC) data as a source/base data
+for validation of beneficiary families under the AB PM-JAY. Based on SECC data, number of families
+in each State, that will be eligible for central subsidy under the AB PM-JAY, will be identified. The
+categories in rural and urban that will be covered under AB PM-JAY are given as follows:
+For Rural
+Total deprived Households targeted for AB PM-JAY who belong to one of the six deprivation
+criteria amongst D1, D2, D3, D4, D5 and D7:
+Page 6 of 15
+Beneficiary Identification Guidelines
+• Only one room with kucha walls and kucha roof (D1)
+• No adult member between age 16 to 59 (D2)
+• Female headed households with no adult male member between age 16 to 59 (D3)
+• Disabled member and no able-bodied adult member (D4)
+• SC/ST households (D5)
+• Landless households deriving major part of their income from manual casual labour (D7)
+Automatically included-
+Households without shelter
+• Destitute/ living on alms
+• Manual scavenger families
+• Primitive tribal groups
+• Legally released bonded labour
+For Urban
+Occupational Categories of Workers
+• Rag picker
+• Beggar
+• Domestic worker
+• Street vendor/ Cobbler/hawker / Other service provider working on streets
+• Construction worker/ Plumber/ Mason/ Labour/ Painter/ Welder/ Security guard/ Coolie and
+another head-load worker
+• Sweeper/ Sanitation worker / Mali
+• Home-based worker/ Artisan/ Handicrafts worker / Tailor
+• Transport worker/ Driver/ Conductor/ Helper to drivers and conductors/ Cart puller/ Rickshaw
+puller
+• Shop worker/ Assistant/ Peon in small establishment/ Helper/Delivery assistant / Attendant/
+Waiter
+• Electrician/ Mechanic/ Assembler/ Repair worker
+• Washer-man/ Chowkidar
+The following activities will be carried out for identifying target families for AB PM-JAY:
+i. AB PM-JAY data in defined format by applying inclusion and exclusion criteria shall be prepared.
+ii. Preparation of Rashtriya Swasthya Bima Yojana (RSBY) beneficiary family list (based on existing
+RSBY enrolled families) for such families where premium has been paid by Government of India
+and data finalized by MoHFW with inputs of States.
+Page 7 of 15
+Beneficiary Identification Guidelines
+iii. AHL_HH_ID will be considered as Family ID for AB PM-JAY targeted families.
+iv. Final data will be accessible in a secure manner to only authorised users who will be allowed to
+access it online and use it for beneficiary verification.
+Example:
+A. State implementing RSBY –the scenario could be as follows:
+• Number of eligible families in SECC Data = 50 lakhs
+• Number of families currently enrolled in RSBY = 52 lakhs
+• Total Number of eligible families for AB PM-JAY = 52 lakhs
+B. State/ UT not implementing RSBY - the scenario could be as follows:
+• Number of eligible families in SECC data = 50 lakhs
+• Total number of eligible families for AB PM-JAY = 50 lakhs
+C. State implementing their own scheme – the scenario could be as follows:
+• Number of eligible families in SECC Data = 50 lakhs
+• Number of families currently covered in State Scheme = 75 lakhs
+• Total Number of eligible families for AB PM-JAY = 50 lakhs
+C. Informing Beneficiaries on what to bring for Identification
+Responsibility of – SHA
+Timeline – Ongoing
+The process requires that Beneficiaries bring:
+• Aadhaar
+• Any other valid government id(s) decided by the State if they do not have an Aadhaar
+• Ration Card or any other family ID from the following:
+o Government certified list of members
+o RSBY Card: Document image (RSBY Card) to be uploaded
+o PM Letter: Document image (PM Letter) to be uploaded
+o State Specific Requirement
+Page 8 of 15
+Beneficiary Identification Guidelines
+In case of unavailability of either of the abovementioned family IDs, the state can decide to
+accept an Individual ID mentioning at least father/ mother/ spouse’s name as a family ID. This
+will be accepted only in such cases where both individual’s name and father/ mother/ spouse’s
+name match as that in SECC/ RSBY/ State Scheme data.
+All IEC activities (see detailed IEC guidelines) must work towards education of the above to ensure it
+is easy for the beneficiaries to receive care.
+D. Beneficiary identification Contact Points – Infrastructure and Locations
+Any resident must be able to easily find out if they are covered under the scheme. This is especially
+critical in States that are launching only on the basis of AB PM-JAY list (SECC + RSBY). These states
+are encouraged to create a large number of resident contact points where they can easily check if they
+are eligible and obtain an e-card.
+The Beneficiary identification contact point will require:
+• A computer with the latest browser
+• A QR code scanner
+• A document scanner to scan requisite documents
+• A printer to print the e-Card
+• A web camera for photos
+• Internet connectivity
+• Aadhaar registered device for fingerprint and iris biometrics (only at Hospital Contact Points)
+Only Hardware and software as prescribed by MoHFW/NHA shall only be used. Detailed specifications
+will be provided in a separate document. Beneficiary identification will be available as a web and mobile
+application. Availability as a mobile app will make it easy to be deployed at larger number of contact
+points. The DNO shall be responsible for choosing the locations for contact centres within each
+village/ward area that is easily accessible to a maximum number of beneficiary families including the
+following:
+• CSC
+• PHCs
+• Gram Panchayat Office
+• Empanelled Hospital
+• Or any other contact point as deemed fit by States/UTs
+Required hardware and software must be setup in these contact points which will be authorized to
+perform Beneficiary identification and issue e-cards.
+Page 9 of 15
+Beneficiary Identification Guidelines
+SHA/ District Nodal Agency will organize training sessions for the operators so that they are trained
+in the Beneficiary identification, Aadhaar seeding and AB PM-JAY e-card printing process. Operators
+are registered entities in the system. All beneficiary verification requests are tagged to the operator
+that initiated the request. If the insurer (Insurance Company/ Trust) rejects multiple requests from a
+single operator – the system will bar the operator till further training / remedial measures can be
+undertaken.
+3 Process Flow Chart for Beneficiary Identification
+Page 10 of 15
+Beneficiary Identification Guidelines
+Page 11 of 15
+Beneficiary Identification Guidelines
+4 Identity Document for a Family Member
+Aadhaar will be primary identity document for a family member that has to be produced under the AB PM-
+JAY scheme. When the beneficiary comes to a contact point, the QR code on the Aadhaar card is scanned
+(or an e-KYC is performed) to capture all the details of the Aadhaar. A demographic authentication is
+performed with UIDAI to ensure the information captured is authentic. A live photograph of the member is
+taken to be printed on the e-card.
+If the AB PM-JAY family member does not have an Aadhaar card and the contact point is a location where
+no treatment is provided, the operator will inform the beneficiary that he is eligible and can get treatment
+only once without an Aadhaar or an Aadhaar enrolment slip. They may be requested to apply for an
+Aadhaar as quickly as possible. A list of the closest Aadhaar enrolment centres is provided to the
+beneficiary
+The AB PM-JAY family member does not have an Aadhaar card and the contact point is a Hospital or place
+of treatment then:
+A. A signed declaration is taken from the Beneficiary that he does not possess an Aadhaar card and
+understands he will need to produce an Aadhaar or an Aadhaar enrolment slip prior to the next
+treatment
+B. The beneficiary must produce an ID document from the list of approved ids by the State
+C. The operator captures the type of ID and the fields as printed on the ID including the Name, Father’s
+Name (if available), Age, Gender and Address fields.
+D. A scan of the ID produced is uploaded into the system for verification.
+E. A photo of the beneficiary is taken.
+F. The information from this alternate ID is used instead of Aadhaar for matching against the AB PM-JAY
+record.
+5 Searching the AB PM-JAY Database
+The AB PM-JAY database will be searched based on the information provided in the Member Identity
+document. AB PM-JAY is based on SECC and it is likely that spellings for Name, Fathers Name and even
+towns and villages will be different between the AB PM-JAY record and the identity document. A beneficiary
+will be eligible for AB PM-JAY if the Name and Location parameters in the beneficiary identity document
+can be regarded as similar to the Name and Location parameters in the AB PM-JAY record.
+The Search system automatically provides a confidence score between the two.
+Page 12 of 15
+Beneficiary Identification Guidelines
+Aadhaar or Other Government ID
+Beneficiary Identity Document
+AB PM-JAY Beneficiary Record
+Name
+Geetha
+Bandhopadhya
+Name Gita Banarjee
+Age 33 Age 40
+Gender F Gender F
+Father’s Name <Not Available> Father’s Name Arghya Banarjee
+State West Bengal State: West Bengal
+District Malda District Malda
+Town / Village Dakshin Chandipur Town / Village Dakshen Chandhipur
+NAME MATCH CONFIDENCE SCORE: 94%
+The Search system will provide multiple ways to find the AB PM-JAY beneficiary record. If there are no
+results based on Name and Location, the operator should:
+A Search by Ration Card and Mobile No (Information captured during the Additional Data Collection
+Drive)
+B Search using the ID printed on the letter sent by post to Beneficiaries (AHL_HH_ID)
+C Reduce some of the parameters like Age, Gender, Sub district, etc. and trial with variation in the
+spelling of the Name if there are no matching results
+D Try adding the name of the father or family members if there are too many results.
+The Search system will show the number of results matched if > 5. The operator is expected to add more
+information to narrow results. The actual results will be displayed when the number matched is 5 or less.
+The operator has to select the correct record from the list shown.
+6 Searching the AB PM-JAY Database for Valid RSBY Beneficiaries
+The operator is unable to find the person using AB PM-JAY search using Name and other methods
+described above, then he can search from the valid RSBY database. The RSBY URN printed on the
+beneficiary card is used to perform the search. The system fetches the record from the RSBY database.
+Page 13 of 15
+Beneficiary Identification Guidelines
+The operator is presented with the confidence score between the Beneficiary Identity document and the
+RSBY record.
+7 Linking Family Identification document with the AB PM-JAY Family
+One or more Family Identity Cards can be linked with each AB PM-JAY Family. While Ration cards will be
+the primary family document, States can define additional family documents that can be used. SECC
+survey was conducted on the basis of households and there are possibilities where the household could
+have multiple ration cards.
+Linking a family identification document strengthens the beneficiary identification process as we can create
+a confidence score based on the names in family identification document and AB PM-JAY record.
+Ration Card or Other Government Family ID
+Beneficiary Identity Document
+AB PM-JAY Beneficiary Record
+Names of family
+members
+RAM, GEETHA,
+GOVIND,
+MEENAKUMARI
+Names of family
+members
+GEETHA,
+MEENAKUMARI, RAM
+FAMILY MATCH CONFIDENCE SCORE: 92%
+Linking the family identification document will be mandatory ONLY if the same document is also the ID
+used by the state to cover a larger base. Operators are encouraged to upload the family document if the
+name match confidence score is low, but they believe the 2 records are the same
+Integration with an online family card database is recommended. In this scenario, the operator will enter
+the Family ID No (from the IDs mentioned earlier) and will be able to fetch the names of the family members
+from the online database.
+If an integration is not possible, the operator will enter the names of the family members as written in the
+ID card and upload a scan of the ID card for verification.
+8 Approval by Insurance Company/Trust
+The State can appoint either the Insurance Company or Trust to perform the verification of the data of
+identified beneficiaries. The team needs to work with a strong Service Level Agreements (SLA) on
+turnaround time. Approvals are expected to be provided within 30 minutes back to the operator on a 24x7
+basis.
+Page 14 of 15
+Beneficiary Identification Guidelines
+The Approver is presented the Beneficiary Identity Document and the AB PM-JAY (or RSBY) record side
+by side for validation along with the confidence score. The lowest confidence score records are presented
+first.
+If the operator has uploaded the Family Identity document, it is also displayed along with the Confidence
+Score.
+The Approver has only 2 choices for each case – Approve or Recommend for Rejection with Reason
+The System maintains a track of which Operator is Approving / Recommending for rejection. The Insurance
+Company/Trust can analyze the approval or rejection pattern of each of the operators.
+A Acceptance of Rejection Request by State (applicable only in case of Insurance Company
+mode of implementation)
+The State should setup a team that reviews all the cases recommended for Rejection. The team
+reviews the data provided and the reason it has been recommended for rejection. If the State agrees
+with the Insurer, it can reject the case.
+If the State disagrees with the Insurer, it can approve the case. The person in the state making the
+decision is also tracked in the system. The State review role is also SLA based and a turnaround is
+expected in 24 hours on working hour basis.
+B Addition of Family Members
+The AB PM-JAY scheme allows addition of new family members if they became part of the family
+either due to marriage or by birth. In order to add a family member, at least one of the existing family
+members needs to be verified and the identity document used for the verification must be Aadhaar.
+To add the additional member, the family must produce:
+• The name of the additional member in a State approved family document like Ration Card OR
+• A birth certificate linking the member to the family OR
+• A marriage certificate linking the member to the family OR
+• An Adoption certificate to identified family member is available.
+Note: Any family member can be added in existing SECC family in-spite of his/her date of birth is after
+or before 2011 and addition of members is not limited only to new born and newly married, any member
+can be added to existing SECC family provided member can establish relation with a PMJAY verified
+beneficiary and the identity document used for the verification must be Aadhaar.
+Page 15 of 15
+Beneficiary Identification Guidelines
+C Monitoring of Beneficiary identification and e-card printing process
+Responsibility of – State Government/ SHA
+Timeline – Continuous
+SG/ SHA will need to have very close monitoring of the process in order to ascertain challenges, if
+any, being faced and resolution of the same. Monitoring of verification process may be based on
+following parameters:
+• Number of contact points and manpower deployed/ Number and type of manpower
+• Time taken for issuance of e-card of each member
+• Percentage of families with at least one member having issued e-card out of total eligible families
+in AB PM-JAY
+• Percentage of members issued e-cards out of total eligible members in AB PM-JAY
+• Percentage of families with at least one member verified out of total eligible families in RSBY data
+(if applicable)
+• Percentage of members issued e-card out of total eligible members in RSBY data (if applicable)
+• Percentage of total members where Aadhaar was available and captured and percentage of
+members without Aadhaar number
+• Percentage of total members where mobile was available and capture
+

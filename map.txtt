@@ -1,0 +1,35 @@
+Here is our official to-do list to transform your project into a fully dynamic, production-ready platform:
+
+Phase 1: Upgrade the AI Brain (Backend)
+Write the "State Machine" System Prompt: We need to give Amazon Bedrock a new set of instructions so it knows exactly how to transition smoothly between the 3 states:
+
+Explore: Read the eligibility_rules to the user and ask if they want to proceed.
+
+Interview: Look at the required_user_fields and ask for them one by one.
+
+Review: Confirm everything is collected.
+
+Update JSON Handling: Ensure the AI dynamically returns whatever keys it finds (like "Crop Type" or "Annual Turnover") instead of the hardcoded ones we used in the bypass.
+
+Phase 2: Build the Dynamic Live Form (Frontend)
+Remove Hardcoded Rows: We will update your Next.js page.tsx to remove the static "Name", "Mobile", and "Aadhaar" rows from the UI.
+
+Auto-Generate UI: We will write a small React map function. Whenever the backend sends new extracted_data (like "Nominee Name" for the Pension scheme), your frontend will instantly and automatically draw a new row for it with a loading/success spinner.
+
+Phase 3: The Final Submission Flow
+The Completion Trigger: We need logic that checks if the Live Form is 100% full.
+
+Verbal Confirmation: Once full, Didi needs to ask, "I have all your details. Should I submit your application to the government?"
+
+Status Update: When the user says "Yes," the backend updates their application status in the database from "In Progress" to "Submitted."
+
+Phase 4: The Admin Dashboard (Final Polish)
+Dynamic Admin View: Update the admin/page.tsx table so the judges can click on a user and see the dynamic data (e.g., seeing the Farm Size for PMKISAN or the Business Type for PMMY).
+
+Accept/Reject Feature: Add the buttons for the admin to approve the form or reject it with a typed reason.
+
+
+
+"Let's build the Level 2 Volume Reactive Avatar."
+venv\Scripts\activate
+uvicorn app.main:app --reload
