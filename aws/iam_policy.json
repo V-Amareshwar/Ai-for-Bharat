@@ -1,0 +1,75 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BedrockInvoke",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:InvokeModel",
+                "bedrock:InvokeModelWithResponseStream"
+            ],
+            "Resource": [
+                "arn:aws:bedrock:*::foundation-model/amazon.nova-pro-v1:0",
+                "arn:aws:bedrock:*::foundation-model/amazon.titan-embed-text-v1",
+                "arn:aws:bedrock:*::foundation-model/amazon.titan-embed-text-v2:0"
+            ]
+        },
+        {
+            "Sid": "BedrockKnowledgeBase",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:Retrieve",
+                "bedrock:RetrieveAndGenerate"
+            ],
+            "Resource": [
+                "arn:aws:bedrock:*:*:knowledge-base/*"
+            ]
+        },
+        {
+            "Sid": "PollyTTS",
+            "Effect": "Allow",
+            "Action": [
+                "polly:SynthesizeSpeech",
+                "polly:DescribeVoices",
+                "polly:ListLexicons"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "DynamoDBAccess",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:PutItem",
+                "dynamodb:GetItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:DeleteItem",
+                "dynamodb:Query",
+                "dynamodb:Scan",
+                "dynamodb:DescribeTable",
+                "dynamodb:BatchGetItem",
+                "dynamodb:BatchWriteItem"
+            ],
+            "Resource": [
+                "arn:aws:dynamodb:*:*:table/didi_users",
+                "arn:aws:dynamodb:*:*:table/didi_users/*",
+                "arn:aws:dynamodb:*:*:table/didi_conversations",
+                "arn:aws:dynamodb:*:*:table/didi_conversations/*",
+                "arn:aws:dynamodb:*:*:table/didi_applications",
+                "arn:aws:dynamodb:*:*:table/didi_applications/*"
+            ]
+        },
+        {
+            "Sid": "S3SchemesRead",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:HeadObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::YOUR_SCHEMES_BUCKET_NAME",
+                "arn:aws:s3:::YOUR_SCHEMES_BUCKET_NAME/*"
+            ]
+        }
+    ]
+}

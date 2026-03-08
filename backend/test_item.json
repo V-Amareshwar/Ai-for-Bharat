@@ -1,0 +1,11 @@
+{
+  "application_id": {"S": "APP-TEST999"},
+  "scheme_id": {"S": "PMJAY"},
+  "user_id": {"S": "1234512345"},
+  "status": {"S": "PENDING"},
+  "created_at": {"S": "2026-03-08T12:00:00Z"},
+  "data": {"M": {
+    "full_name": {"S": "CLI Tester"},
+    "aadhaar_number": {"S": "999988887777"}
+  }}
+}
