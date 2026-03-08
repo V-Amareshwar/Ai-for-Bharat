@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { VoiceRecorder } from './components/VoiceRecorder';
 import { MobileLogin } from './components/MobileLogin';
 import { AdminDashboard } from './pages/AdminDashboard';
+import { LandingPage } from './pages/LandingPage';
 import { t } from './i18n';
 
 function App() {
@@ -23,8 +24,11 @@ function App() {
       {/* Officer Dashboard specific route */}
       <Route path="/admin" element={<AdminDashboard />} />
 
+      {/* New Aesthetic Landing Page */}
+      <Route path="/" element={<LandingPage />} />
+
       {/* Main App Container */}
-      <Route path="/" element={
+      <Route path="/portal" element={
         <div className="app-container">
           <header className="app-header">
             <div className="app-logo">{t('app_title', userLang)}</div>

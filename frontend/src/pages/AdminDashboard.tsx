@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ShieldCheck } from 'lucide-react';
 import { Api } from '../services/api';
 import './AdminDashboard.css';
 
@@ -43,9 +44,15 @@ export const AdminDashboard: React.FC = () => {
     const [reason, setReason] = useState("");
     const [actionLoading, setActionLoading] = useState(false);
 
+    // Authentication State
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [passwordInput, setPasswordInput] = useState("");
+
     useEffect(() => {
-        fetchApplications();
-    }, []);
+        if (isAuthenticated) {
+            fetchApplications();
+        }
+    }, [isAuthenticated]);
 
     const fetchApplications = async () => {
         try {
@@ -81,6 +88,38 @@ export const AdminDashboard: React.FC = () => {
             setActionLoading(false);
         }
     };
+    const handleLogin = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (passwordInput === 'kmit') {
+            setIsAuthenticated(true);
+        } else {
+            alert("Incorrect password. Hint for Hackathon Judges: kmit");
+        }
+    };
+
+    if (!isAuthenticated) {
+        return (
+            <div className="admin-login-container">
+                <div className="admin-login-card">
+                    <ShieldCheck size={56} className="admin-login-icon" />
+                    <h2>Officer Portal Login</h2>
+                    <p>Enter the administrative password to access the DidiGov tracking portal.</p>
+                    <form onSubmit={handleLogin}>
+                        <input
+                            type="password"
+                            value={passwordInput}
+                            onChange={(e) => setPasswordInput(e.target.value)}
+                            placeholder="Password (Hint: kmit)"
+                            autoFocus
+                        />
+                        <button type="submit" className="login-btn">
+                            Access Dashboard
+                        </button>
+                    </form>
+                </div>
+            </div>
+        );
+    }
 
     if (loading) return <div className="admin-loading">Loading Officer Dashboard...</div>;
     if (error) return <div className="admin-error">{error}</div>;
