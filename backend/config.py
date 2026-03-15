@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     api_port: int = Field(default=8000, alias="API_PORT")
     api_reload: bool = Field(default=True, alias="API_RELOAD")
     api_cors_origins: str = Field(
-        default="http://localhost:3000,http://127.0.0.1:3000,http://localhost:5173,https://main.dvp5xz4vobis8.amplifyapp.com",
+        default="http://localhost:5173,http://127.0.0.1:8000,https://main.dvp5xz4vobis8.amplifyapp.com",
         alias="API_CORS_ORIGINS"
     )
 
