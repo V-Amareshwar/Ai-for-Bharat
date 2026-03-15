@@ -40,6 +40,54 @@
     overflow: hidden;
 }
 
+/* ─── MOBILE RESPONSIVE MAIN CONTAINER ─── */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+    }
+
+    .admin-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .admin-header p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .admin-grid {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-container {
+        padding: 0.75rem;
+        min-height: 100vh;
+    }
+
+    .admin-loading,
+    .admin-error {
+        font-size: 1.2rem;
+    }
+
+    .admin-header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .admin-header p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .admin-grid {
+        border-radius: 6px;
+        overflow-x: auto;
+    }
+}
+
 .admin-table {
     width: 100%;
     border-collapse: collapse;
@@ -69,6 +117,69 @@
 
 .admin-table tbody tr:hover {
     background-color: #f8fafc;
+}
+
+/* ─── MOBILE RESPONSIVE TABLE ─── */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+    }
+
+    .admin-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .admin-header p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .admin-grid {
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 0.75rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .admin-table th {
+        font-size: 0.7rem;
+    }
+
+    .btn-review {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-container {
+        padding: 0.5rem;
+    }
+
+    .admin-header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .admin-header p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    .btn-review {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+    }
 }
 
 .status-badge {
@@ -108,6 +219,32 @@
     background-color: #bfdbfe;
 }
 
+/* ─── MOBILE RESPONSIVE STATUS BADGES ─── */
+@media (max-width: 768px) {
+    .status-badge {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.68rem;
+    }
+
+    .btn-review {
+        padding: 0.3rem 0.75rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .status-badge {
+        padding: 0.15rem 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .btn-review {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.65rem;
+        white-space: nowrap;
+    }
+}
+
 /* Modal Styling */
 .modal-overlay {
     position: fixed;
@@ -121,6 +258,21 @@
     align-items: center;
     z-index: 50;
     backdrop-filter: blur(4px);
+}
+
+/* ─── MOBILE RESPONSIVE MODAL OVERLAY ─── */
+@media (max-width: 768px) {
+    .modal-overlay {
+        padding: 0.5rem;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 0.25rem;
+        align-items: flex-end;
+    }
 }
 
 .modal-content {
@@ -167,6 +319,65 @@
     overflow-y: auto;
 }
 
+/* ─── MOBILE RESPONSIVE MODAL ─── */
+@media (max-width: 768px) {
+    .modal-overlay {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-width: 100%;
+        max-height: 95vh;
+        border-radius: 12px;
+    }
+
+    .modal-header {
+        padding: 1.25rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.1rem;
+        word-break: break-word;
+        flex: 1;
+    }
+
+    .btn-close {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%;
+        max-height: 100vh;
+        border-radius: 8px;
+    }
+
+    .modal-header {
+        padding: 1rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .modal-header h2 {
+        font-size: 0.95rem;
+    }
+
+    .btn-close {
+        font-size: 1.1rem;
+    }
+
+    .modal-body {
+        padding: 0.75rem;
+    }
+}
+
 .info-group {
     margin-bottom: 1rem;
 }
@@ -190,6 +401,46 @@
     letter-spacing: 0.05em;
 }
 
+/* ─── MOBILE RESPONSIVE INFO GROUP ─── */
+@media (max-width: 768px) {
+    .info-group {
+        margin-bottom: 0.75rem;
+    }
+
+    .info-group label {
+        font-size: 0.8rem;
+    }
+
+    .info-value {
+        font-size: 0.95rem;
+    }
+
+    .text-mono {
+        font-size: 0.95rem;
+        letter-spacing: 0;
+        word-break: break-all;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-group {
+        margin-bottom: 0.5rem;
+    }
+
+    .info-group label {
+        font-size: 0.75rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .info-value {
+        font-size: 0.9rem;
+    }
+
+    .text-mono {
+        font-size: 0.85rem;
+    }
+}
+
 .data-payload-section {
     margin: 1.5rem 0;
     background-color: #ffffff;
@@ -210,6 +461,31 @@
     letter-spacing: 0.025em;
 }
 
+/* ─── MOBILE RESPONSIVE DATA PAYLOAD ─── */
+@media (max-width: 768px) {
+    .data-payload-section {
+        margin: 1rem 0;
+        border-radius: 6px;
+    }
+
+    .data-payload-section h3 {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .data-payload-section {
+        margin: 0.75rem 0;
+        border-radius: 4px;
+    }
+
+    .data-payload-section h3 {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
 .json-viewer {
     padding: 1rem;
     overflow-x: auto;
@@ -222,6 +498,29 @@
     color: #1e293b;
     white-space: pre-wrap;
     line-height: 1.6;
+}
+
+/* ─── MOBILE RESPONSIVE JSON VIEWER ─── */
+@media (max-width: 768px) {
+    .json-viewer {
+        padding: 0.75rem;
+    }
+
+    .json-viewer pre {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .json-viewer {
+        padding: 0.5rem;
+    }
+
+    .json-viewer pre {
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
 }
 
 .json-key {
@@ -275,6 +574,46 @@
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
+/* ─── MOBILE RESPONSIVE ACTION SECTION ─── */
+@media (max-width: 768px) {
+    .action-section {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .action-section label {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .action-section textarea {
+        padding: 0.65rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-section {
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+    }
+
+    .action-section label {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .action-section textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+        border-radius: 4px;
+        min-height: 80px;
+    }
+}
+
 .action-buttons {
     display: flex;
     gap: 1rem;
@@ -300,6 +639,31 @@
 .action-buttons button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+/* ─── MOBILE RESPONSIVE BUTTONS ─── */
+@media (max-width: 768px) {
+    .action-buttons {
+        gap: 0.75rem;
+    }
+
+    .action-buttons button {
+        padding: 0.7rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .action-buttons button {
+        padding: 0.65rem 0.8rem;
+        font-size: 0.85rem;
+        width: 100%;
+    }
 }
 
 .btn-reject {
@@ -333,6 +697,31 @@
 .status-banner p {
     margin: 0.5rem 0 0 0;
     font-size: 0.9rem;
+}
+
+/* ─── MOBILE RESPONSIVE STATUS BANNER ─── */
+@media (max-width: 768px) {
+    .status-banner {
+        padding: 0.85rem;
+        border-radius: 6px;
+    }
+
+    .status-banner p {
+        font-size: 0.85rem;
+        margin: 0.3rem 0 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .status-banner {
+        padding: 0.75rem;
+        border-radius: 4px;
+    }
+
+    .status-banner p {
+        font-size: 0.8rem;
+        margin: 0.2rem 0 0 0;
+    }
 }
 
 /* --- Admin Login Modal Styles --- */
@@ -449,4 +838,105 @@
 .admin-login-card .login-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+/* ─── MOBILE RESPONSIVE LOGIN CARD ─── */
+@media (max-width: 768px) {
+    .admin-login-card {
+        padding: 2.5rem 2rem;
+        max-width: 100%;
+        width: 85%;
+        border-radius: 16px;
+    }
+
+    .admin-login-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1rem;
+    }
+
+    .admin-login-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .admin-login-card p {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .admin-login-card form {
+        gap: 1rem;
+    }
+
+    .admin-login-card input {
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    .admin-login-card .login-btn {
+        padding: 0.9rem;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-login-container {
+        padding: 1rem;
+    }
+
+    .admin-login-container::before {
+        width: 300px;
+        height: 300px;
+        top: -5%;
+        left: -5%;
+    }
+
+    .admin-login-container::after {
+        width: 250px;
+        height: 250px;
+        bottom: -5%;
+        right: -5%;
+    }
+
+    .admin-login-card {
+        padding: 2rem 1.5rem;
+        width: 95%;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .admin-login-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.75rem;
+    }
+
+    .admin-login-card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .admin-login-card p {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .admin-login-card form {
+        gap: 0.85rem;
+    }
+
+    .admin-login-card input {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
+
+    .admin-login-card .login-btn {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
 }
